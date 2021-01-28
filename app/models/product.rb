@@ -4,4 +4,7 @@ class Product < ApplicationRecord
 
   has_many :order_items
   has_many :orders, through: :order_items
+
+  accepts_nested_attributes_for :categories
+  accepts_nested_attributes_for :variants
 end
