@@ -46,4 +46,5 @@ class Order < ApplicationRecord
     end
     update_attribute(:total, sum)
   end
+
 end
